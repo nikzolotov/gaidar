@@ -1,2 +1,4 @@
 syntax: glob
 logs/*
+parser3.conf
+design/*
