@@ -7,8 +7,11 @@
 		<!--[if lte IE 7]>
 			<link rel="stylesheet" type="text/css" href="/css/ie7.css"/>
 		<![endif]-->
+		<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.hints.js"></script>
+		<script type="text/javascript" src="/js/main.js"></script>
 	</head>
-	<body class="c-article">
+	<body class="c-article-page">
 		<div class="l-container">
 			<div class="l-header">
 				<a class="b-logo" href="/">
@@ -22,7 +25,7 @@
 						<a class="link" href="/about/">О Егоре Гайдаре</a>
 					</li>
 					<li class="item articles">
-						<a class="link selected" href="/about/">Публикации<b class="b-arrow-down"><b></b></b></a>
+						<a class="link selected" href="/about/">Публикации<b class="b-graphics b-graphics-down-arrow"><b></b></b></a>
 					</li>
 					<li class="item projects">
 						<a class="link" href="/about/">Проекты</a>
@@ -36,51 +39,88 @@
 				</div>
 			</div>
 			<div class="l-content l-wrapper">
-				<div class="l-column-250">
-					<form method="get" action="?">
+				<div class="l-column-210 l-intercolumn-40">
+					<form class="b-search-form" method="get" action="?">
 						<fieldset>
-							<input type="text" name="query" style="font-size: 12px"/>
+							<label class="b-hint-label" for="f-query">Поиск по сайтам Фонда</label>
+							<input id="f-query" class="b-input" type="text" name="query"/>
 						</fieldset>
 					</form>
-					<h2>Проекты <br/>Фонда</h2>
+					<h2 class="b-navigation-title">Проекты <br/>Фонда</h2>
 					<div class="l-shift-20">
 						<ul class="b-menu">
 							<li class="item">
-								<a class="link" href="?menu-1">О проектах Фонда</a>
+								<a class="link c-project-link" href="?menu-1">О проектах Фонда</a>
 							</li>
 							<li class="item">
-								<a class="link" href="?menu-2">Стипендии</a>
+								<a class="link c-project-link" href="?menu-2">Стипендии</a>
 							</li>
 							<li class="item">
-								<a class="link" href="?menu-3">Гайдаровские чтения</a>
+								<a class="link c-project-link" href="?menu-3">Гайдаровские чтения</a>
 							</li>
 							<li class="item">
-								<a class="link" href="?menu-4">Гайдаровский клуб</a>
+								<a class="link c-project-link" href="?menu-4">Гайдаровский клуб</a>
 							</li>
 							<li class="item">
-								<a class="link" href="?menu-5">Гайдаровский форум</a>
+								<a class="link c-project-link" href="?menu-5">Гайдаровский форум</a>
 							</li>
 							<li class="item">
-								<a class="link" href="?menu-6">Гранты USRF</a>
+								<a class="link c-project-link" href="?menu-6">Гранты USRF</a>
 							</li>
 							<li class="item">
-								<a class="link" href="?menu-6"><em>Все проекты</em></a>
+								<a class="link c-project-link" href="?menu-7"><em>Все проекты</em></a>
 							</li>
 						</ul>
 					</div>
-					<h2>Календарь</h2>
+					<h2 class="b-navigation-title">Календарь</h2>
 					<div class="l-shift-20">
 						<ul class="b-menu">
 							<li class="item">
-								<a class="link" href="?menu-11">О проектах Фонда</a>
+								<a class="link c-project-link" href="?menu-11">О проектах Фонда</a>
 							</li>
 						</ul>
 					</div>
-					<h2>Главное</h2>
+					<h2 class="b-navigation-title">Главное</h2>
 					<div class="l-shift-20">
 						<ul class="b-menu">
 							<li class="item">
-								<a class="link" href="?menu-11">О проектах Фонда</a>
+								<a class="link c-all-link" href="?menu-21">Все</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-news-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Новости</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-about-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Отчеты</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-article-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Разбор архивных документов</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-project-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Глубокое чтение</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-article-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Интервью</a>
+							</li>
+							<li class="item">
+								<a class="link c-article-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Видео</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-article-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Переводы рецензий книг</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-gaidar-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Гайдар-клуб</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-project-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Гайдаровские чтения</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-project-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>ЦНСИ</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-project-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>События на подпроектах</a>
+							</li>
+							<li class="item">
+								<a class="link disabled c-gaidar-link" href="?menu-22"><b class="b-graphics b-graphics-check"><b></b></b>Жизнь Фонда</a>
 							</li>
 						</ul>
 					</div>
@@ -88,9 +128,14 @@
 				<div class="l-column-536 l-intercolumn-24">
 					<h1>24 кролика были выпущены в Австралии в 1859 году. К 1907 году численность их потомства составляла миллионы</h1>
 					<div class="b-meta">
-						<span class="date">16 сентября 2012</span>
-						<span class="square">■</span>
-						<strong class="author">Яков Кельберт</strong>
+						<div class="meta">
+							<span class="date">16 сентября 2012</span>
+							<span class="square">■</span>
+							<strong class="author">Яков Кельберт</strong>
+						</div>
+						<div class="disqussion">
+							<a class="link" href="?">Обсуждение (37)</a>
+						</div>
 					</div>
 					<p class="b-intro">
 						<strong>Поздравляем победителей, одержавших победительную победу над побеждёнными и проигравшими. Поздравляем убедительных победителей, триумфально одержавших победительную победу над побеждёнными и проигравшими.</strong>
@@ -114,6 +159,18 @@
 						<p>Горе побежденным! Победителей не&nbsp;судят! Квинтилий Вар, верни мне моих свиней! Множество раз с&nbsp;тех пор повторялись эти жестокие слова в&nbsp;жестоком старом мире</p>
 					</blockquote>
 					<p>Слова эти, ставшие крылатыми, приписываются Екатерине&nbsp;II, и&nbsp;сказала она их&nbsp;будто&nbsp;бы, когда А.&nbsp;В.&nbsp;Суворов, отличавшийся смелой самостоятельностью в&nbsp;своих действиях командира, был предан военному суду за&nbsp;штурм в&nbsp;1773 году крепости Туртукай, предпринятый вопреки приказанию фельдмаршала Румянцева. Завоевав в&nbsp;390 году до&nbsp;н.э. гордый Рим, предводитель галлов Бренн наложил на&nbsp;него контрибуцию (военный налог) в&nbsp;тысячу фунтов золота.</p>
+					<div class="b-meta b-meta-separated">
+						<div class="meta">
+							<img src="/img/tmp/likes.png" alt=""/>
+						</div>
+						<div class="disqussion">
+							<a class="link" href="?">Обсуждение (37)</a>
+						</div>
+					</div>
+					<div class="b-nearest-articles">
+						<a class="link c-article-link" href="?nearest-1"><b class="b-graphics b-graphics-left-arrow"><b></b></b>Пойман с поличным Квинтилий Вар</a>
+						<a class="link next c-about-link" href="?nearest-2"><b class="b-graphics b-graphics-right-arrow"><b></b></b>Румянцев побледнел но сдержался</a>
+					</div>
 				</div>
 				<div class="l-column-150">
 					<h2 class="b-context-title">Ещё на эту тему</h2>
