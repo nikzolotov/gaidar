@@ -165,6 +165,10 @@ SUB {
 		}
 
 /* Columns */
+.l-column-144 {
+	float: left;
+	width: 144px;
+	}
 .l-column-150 {
 	float: left;
 	width: 150px;
@@ -180,6 +184,10 @@ SUB {
 .l-column-250 {
 	float: left;
 	width: 250px;
+	}
+.l-column-472 {
+	float: left;
+	width: 472px;
 	}
 .l-column-536 {
 	float: left;
@@ -201,6 +209,9 @@ SUB {
 .l-intercolumn-24 {
 	padding-right: 24px;
 	}
+.l-intercolumn-28 {
+	padding-right: 28px;
+	}
 .l-intercolumn-40 {
 	padding-right: 40px;
 	}
@@ -214,6 +225,7 @@ SUB {
 /* Clearfix */
 .l-wrapper:after,
 .b-main-menu:after,
+.b-events:after,
 .b-meta:after {
 	content: ".";
 	display: block;
@@ -515,6 +527,26 @@ SUB {
 	margin: 48px 0 8px 0;
 	}
 
+/* Title and publication label */
+.b-section-label {
+	display: block;
+	margin: 0 0 4px 0;
+	background: #333;
+	text-align: center;
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: bold;
+	color: #FFF;
+	}
+	.b-section-label .link {
+		display: block;
+		text-decoration: none;
+		color: #FFF;
+		}
+	.b-section-label .link:hover {
+		opacity: .75;
+		}
+
 /* Context title */
 .b-context-title {
 	margin: 4px 0 6px 0;
@@ -649,14 +681,15 @@ SUB {
 
 /* Events */
 .b-events {
-	margin: 0 0 0 0;
+	margin: 0 0 20px 0;
+	padding: 0;
 	font-size: 12px;
 	line-height: 15px;
 	}
 	.b-events .item {
 		float: left;
 		width: 122px;
-		margin-left: 20px;
+		margin: 0 0 0 20px;
 		}
 	.b-events .item:before {
 		content: none;
@@ -704,6 +737,74 @@ SUB {
 		.b-events .nearest-3:hover {
 			color: #676767;
 			}
+
+/* Featured article */
+.b-featured-article {
+	position: relative;
+	margin-bottom: 32px;
+	padding-left: 148px;
+	font-size: 14px;
+	line-height: 20px;
+	}
+	.b-featured-article .link {
+		text-decoration: none;
+		}
+		.b-featured-article .b-section-label {
+			position: absolute;
+			top: 14px;
+			left: 10px;
+			width: 100px;
+			}
+		.b-featured-article .image {
+			float: left;
+			margin: 6px 0 0 -148px;
+			}
+		.b-featured-article .title {
+			margin: 0 0 10px 0;
+			font-size: 18px;
+			line-height: 21px;
+			}
+	.b-featured-article .desc {
+		margin: 0;
+		}
+
+/* Standalone article announcement */
+.b-article {
+	position: relative;
+	margin-bottom: 21px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #676767;
+	}
+	.b-article .link {
+		display: block;
+		text-decoration: none;
+		}
+		.b-article .b-section-label {
+			width: 100px;
+			margin-bottom: 8px;
+			}
+		.b-article .image {
+			display: block;
+			margin-bottom: 14px;
+			}
+		.b-article .date {
+			font-size: 11px;
+			color: #999;
+			}
+		.b-article .title {
+			margin: 0 0 10px 0;
+			font-size: 12px;
+			line-height: 16px;
+			}
+	.b-article .desc {
+		margin: 0;
+		}
+.b-article-illustrated .b-section-label {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	}
 
 /* Article meta with disqussion link */
 .b-meta {
@@ -810,7 +911,8 @@ SUB {
 	color: #FFB954 !important;
 	}
 .c-about-link .b-graphics B,
-.c-about-link.disabled:hover .b-graphics B {
+.c-about-link.disabled:hover .b-graphics B,
+.c-about-block {
 	background-color: #FD9500;
 	}
 .c-about-link:hover .b-graphics B {
@@ -829,7 +931,8 @@ SUB {
 	color: #FD9071 !important;
 	}
 .c-gaidar-link .b-graphics B,
-.c-gaidar-link.disabled:hover .b-graphics B {
+.c-gaidar-link.disabled:hover .b-graphics B,
+.c-gaidar-block {
 	background-color: #E95429;
 	}
 .c-gaidar-link:hover .b-graphics B {
@@ -848,7 +951,8 @@ SUB {
 	color: #B25CB7 !important;
 	}
 .c-article-link .b-graphics B,
-.c-article-link.disabled:hover .b-graphics B {
+.c-article-link.disabled:hover .b-graphics B,
+.c-article-block {
 	background-color: #8D3192;
 	}
 .c-article-link:hover .b-graphics B {
@@ -867,7 +971,8 @@ SUB {
 	color: #8983CB !important;
 	}
 .c-project-link .b-graphics B,
-.c-project-link.disabled:hover .b-graphics B {
+.c-project-link.disabled:hover .b-graphics B,
+.c-project-block {
 	background-color: #5A54A3;
 	}
 .c-project-link:hover .b-graphics B {
@@ -886,7 +991,8 @@ SUB {
 	color: #348DDB !important;
 	}
 .c-news-link .b-graphics B,
-.c-news-link.disabled:hover .b-graphics B {
+.c-news-link.disabled:hover .b-graphics B,
+.c-news-block {
 	background-color: #005AA9;
 	}
 .c-news-link:hover .b-graphics B {
