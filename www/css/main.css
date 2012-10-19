@@ -154,7 +154,7 @@ SUB {
 	}
 	.l-header {
 		position: relative;
-		padding: 0 0 18px 250px;
+		padding: 0 0 22px 250px;
 		}
 	.l-content {
 		padding-bottom: 90px;
@@ -167,6 +167,11 @@ SUB {
 		overflow: hidden;
 		padding: 5px 0;
 		}
+
+/* Wrappers */
+.l-wrapper-21 {
+	margin-bottom: 21px;
+	}
 
 /* Columns */
 .l-column-144 {
@@ -257,7 +262,7 @@ SUB {
 
 /* Main menu */
 .b-main-menu {
-	margin: 0 0 72px 0;
+	margin: 0 0 68px 0;
 	font-size: 11px;
 	line-height: 14px;
 	}
@@ -692,7 +697,7 @@ SUB {
 .b-promo {
 	width: 699px;
 	height: 327px;
-	margin: -13px 0 40px 0;
+	margin: -17px 0 40px 0;
 	font-size: 14px;
 	line-height: 18px;
 	}
@@ -941,6 +946,16 @@ SUB {
 			.b-news .link:visited {
 				color: #999;
 				}
+
+.b-more {
+	text-align: center;
+	font-size: 21px;
+	line-height: 24px;
+	font-weight: bold;
+	}
+	.b-more .link {
+		text-decoration: none;
+		}
 
 /* Blogs */
 .b-blogs {
