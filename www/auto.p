@@ -20,6 +20,7 @@
 				<div class="l-content l-wrapper">
 					^content[]
 				</div>
+				^partners[]
 			</div>
 			<div class="l-footer">
 				^footer[]
@@ -88,9 +89,11 @@
 		</ul>
 	</div>
 
+@partners[]
+
 @footer[]
 	<div class="l-inner l-wrapper">
-		<div class="l-column-210 l-intercolumn-20 l-shift-20">
+		<div class="l-column-210 l-intercolumn-30 l-shift-10">
 			<ul class="b-featured-menu">
 				<li class="item">
 					<a class="link c-about-link" href="?footer-1">О Фонде</a>
@@ -112,7 +115,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="l-column-210 l-intercolumn-20">
+		<div class="l-column-210 l-intercolumn-30">
 			<ul class="b-featured-menu b-featured-menu-untitled">
 				<li class="item">
 					<a class="link c-project-link" href="?footer-11">Премия</a>
@@ -131,7 +134,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="l-column-250 l-intercolumn-20">
+		<div class="l-column-230 l-intercolumn-30">
 			<h2 class="b-featured-title">
 				<a class="link" href="?footer-21">Проекты</a>
 			</h2>
@@ -183,7 +186,7 @@
 			</div>
 		</div>
 		<div class="l-column-50p">
-			<div class="l-shift-20">
+			<div class="l-shift-10">
 				<div class="b-copyright">2010&ndash;2012&nbsp;&copy; <a class="link" href="/">Фонд Егора Гайдара</a></div>
 			</div>
 		</div>
