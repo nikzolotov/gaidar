@@ -43,13 +43,13 @@
 			<a class="link^if(in '/publications/'){ selected}" href="/publications/">Публикации^if(in '/publications/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
 		</li>
 		<li class="item projects">
-			<a class="link" href="/projects/">Проекты</a>
+			<a class="link^if(in '/projects/'){ selected}" href="/projects/award/">Проекты^if(in '/projects/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
 		</li>
 		<li class="item news">
 			<a class="link" href="/news/">Новости</a>
 		</li>
 	</ul>
-	<div>
+	<div class="b-share">
 		<img src="/img/tmp/likes.png" alt=""/>
 	</div>
 
@@ -57,10 +57,7 @@
 
 @navigationPart[]
 	<form class="b-search-form" method="get" action="?">
-		<fieldset>
-			<label class="b-hint-label" for="f-query">Поиск по сайтам Фонда</label>
-			<input id="f-query" class="b-input" type="text" name="query"/>
-		</fieldset>
+		^searchFieldset[]
 	</form>
 	<h2 class="b-navigation-title">Проекты <br/>Фонда</h2>
 	<div class="l-shift-20">
@@ -88,6 +85,12 @@
 			</li>
 		</ul>
 	</div>
+
+@searchFieldset[]
+	<fieldset>
+		<label class="b-hint-label" for="f-query">Поиск по сайтам Фонда</label>
+		<input id="f-query" class="b-input" type="text" name="query"/>
+	</fieldset>
 
 @partners[]
 
