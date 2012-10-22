@@ -49,9 +49,6 @@
 			<a class="link" href="/news/">Новости</a>
 		</li>
 	</ul>
-	<div class="b-share">
-		<img src="/img/tmp/likes.png" alt=""/>
-	</div>
 
 @content[]
 
