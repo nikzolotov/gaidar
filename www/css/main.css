@@ -170,16 +170,7 @@ SUB {
 		padding: 5px 0;
 		}
 
-/* Wrappers */
-.l-wrapper-21 {
-	margin-bottom: 21px;
-	}
-
 /* Columns */
-.l-column-144 {
-	float: left;
-	width: 144px;
-	}
 .l-column-150 {
 	float: left;
 	width: 150px;
@@ -210,9 +201,6 @@ SUB {
 	}
 
 /* Column paddings */
-.l-intercolumn-20 {
-	padding-right: 20px;
-	}
 .l-intercolumn-24 {
 	padding-right: 24px;
 	}
@@ -252,7 +240,8 @@ SUB {
 .l-wrapper:after,
 .b-main-menu:after,
 .b-events:after,
-.b-meta:after {
+.b-meta:after,
+.b-tiles:after {
 	content: ".";
 	display: block;
 	height: 0;
@@ -811,6 +800,7 @@ SUB {
 		position: absolute;
 		top: 130px;
 		left: 18px;
+		display: none;
 		}
 		.b-promo .b-graphics {
 			position: relative;
@@ -823,6 +813,7 @@ SUB {
 		position: absolute;
 		top: 130px;
 		right: 18px;
+		display: none;
 		}
 	.b-promo .previews {
 		position: absolute;
@@ -982,6 +973,7 @@ SUB {
 
 /* Quote */
 .b-quote {
+	margin: 0 0 32px 0;
 	padding: 0;
 	font-size: 16px;
 	line-height: 20px;
@@ -1008,6 +1000,7 @@ SUB {
 	margin-bottom: 21px;
 	font-size: 12px;
 	line-height: 16px;
+	color: #676767;
 	}
 	.b-vote .b-section-label {
 		width: 100px;
@@ -1256,6 +1249,15 @@ SUB {
 
 /* =Containers
 --------------------------------------- */
+
+/* Tiles */
+.b-tiles {
+	margin: 0 0 21px -20px;
+	}
+	.b-tiles-item {
+		width: 144px;
+		margin-left: 20px;
+		}
 
 /* =Banners
 --------------------------------------- */
