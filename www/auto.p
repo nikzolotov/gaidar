@@ -10,6 +10,7 @@
 			<![endif]-->
 			<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
 			<script type="text/javascript" src="/js/jquery.hints.js"></script>
+			<script type="text/javascript" src="/js/jquery.slideshow.js"></script>
 			<script type="text/javascript" src="/js/main.js"></script>
 		</head>
 		<body^if(def $bodyClass){ class="$bodyClass"}>
