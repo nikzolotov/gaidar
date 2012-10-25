@@ -36,10 +36,10 @@
 	</a>
 	<ul class="b-main-menu">
 		<li class="item about">
-			<a class="link" href="/about/">О Фонде</a>
+			<a class="link^if(in '/about/'){ selected}" href="/about/">О Фонде^if(in '/about/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
 		</li>
 		<li class="item gaidar">
-			<a class="link" href="/gaidar/">О Егоре Гайдаре</a>
+			<a class="link^if(in '/gaidar/'){ selected}" href="/gaidar/">О Егоре Гайдаре^if(in '/gaidar/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
 		</li>
 		<li class="item articles">
 			<a class="link^if(in '/publications/'){ selected}" href="/publications/">Публикации^if(in '/publications/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
@@ -48,7 +48,7 @@
 			<a class="link^if(in '/projects/'){ selected}" href="/projects/award/">Проекты^if(in '/projects/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
 		</li>
 		<li class="item news">
-			<a class="link" href="/news/">Новости</a>
+			<a class="link^if(in '/news/'){ selected}" href="/news/">Новости^if(in '/news/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
 		</li>
 	</ul>
 
@@ -58,6 +58,15 @@
 	<form class="b-search-form" method="get" action="?">
 		^searchFieldset[]
 	</form>
+	^projectsNavigation[]
+
+@searchFieldset[]
+	<fieldset>
+		<label class="b-hint-label" for="f-query">Поиск по сайтам Фонда</label>
+		<input id="f-query" class="b-input" type="text" name="query"/>
+	</fieldset>
+
+@projectsNavigation[]
 	<h2 class="b-navigation-title">Проекты <br/>Фонда</h2>
 	<div class="l-shift-20">
 		<ul class="b-menu">
@@ -84,12 +93,6 @@
 			</li>
 		</ul>
 	</div>
-
-@searchFieldset[]
-	<fieldset>
-		<label class="b-hint-label" for="f-query">Поиск по сайтам Фонда</label>
-		<input id="f-query" class="b-input" type="text" name="query"/>
-	</fieldset>
 
 @partners[]
 

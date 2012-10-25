@@ -201,6 +201,9 @@ SUB {
 	}
 
 /* Column paddings */
+.l-intercolumn-10 {
+	padding-right: 10px;
+	}
 .l-intercolumn-24 {
 	padding-right: 24px;
 	}
@@ -212,6 +215,9 @@ SUB {
 	}
 .l-intercolumn-40 {
 	padding-right: 40px;
+	}
+.l-intercolumn-66 {
+	padding-right: 66px;
 	}
 .l-shift-10 {
 	padding-left: 10px;
@@ -241,6 +247,8 @@ SUB {
 .b-main-menu:after,
 .b-events:after,
 .b-meta:after,
+.b-structure:after,
+.b-contacts:after,
 .b-tiles:after {
 	content: ".";
 	display: block;
@@ -494,20 +502,23 @@ SUB {
 /* Icons */
 .b-icon {
 	position: absolute;
-	width: 16px;
-	height: 16px;
-	margin-left: -21px;
+	width: 36px;
+	height: 36px;
+	margin-left: -43px;
 	overflow: hidden;
 	}
 	.b-icon B {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 147px;
-		height: 124px;
+		width: 74px;
+		height: 37px;
 		background: url("../img/icons.png") no-repeat;
 		text-indent: -9999px;
 		}
+.b-icon-pdf B {
+	left: -37px;
+	}
 
 /* Stencil graphics */
 .b-graphics {
@@ -617,6 +628,20 @@ SUB {
 	margin: 48px 0 8px 0;
 	}
 
+/* Page title */
+.b-page-title {
+	margin: 34px 0 12px 0;
+	text-transform: uppercase;
+	font-size: 42px;
+	line-height: 40px;
+	}
+
+/* Sub title */
+.b-sub-title {
+	margin-bottom: 16px;
+	text-transform: uppercase;
+	}
+
 /* Title and publication label */
 .b-section-label {
 	display: block;
@@ -654,9 +679,18 @@ SUB {
 	}
 
 /* Intro or some description */
-.b-intro {
+.b-intro,
+.b-sub-intro {
+	margin-bottom: 12px;
 	font-size: 18px;
 	line-height: 22px;
+	}
+
+/* Huge intro */
+.b-huge-intro {
+	margin: 30px 0 30px 20px;
+	font-size: 24px;
+	line-height: 24px;
 	}
 
 /* Compact quote */
@@ -1050,6 +1084,9 @@ SUB {
 			.b-news .link:visited {
 				color: #999;
 				}
+.b-news-separated {
+	margin-bottom: 84px;
+	}
 
 /* More link */
 .b-more {
@@ -1188,6 +1225,123 @@ SUB {
 	.b-place .desc {
 		margin-bottom: 8px;
 		}
+
+/* Fund structure */
+.b-structure {
+	margin: -6px 0 21px 0;
+	font-size: 12px;
+	line-height: 18px;
+	}
+	.b-structure .item {
+		float: left;
+		width: 134px;
+		margin-bottom: 7px;
+		padding: 0 10px;
+		}
+	.b-structure .item:before {
+		content: none;
+		display: none;
+		}
+		.b-structure .title {
+			height: 80px;
+			margin: 0 -10px 5px -10px;
+			padding: 0 10px;
+			text-transform: uppercase;
+			font-size: 12px;
+			line-height: 21px;
+			color: #FFF;
+			}
+			.b-structure .text {
+				display: table-cell;
+				height: 78px;
+				vertical-align: bottom;
+				}
+		.b-structure .desc {
+			margin: 0;
+			}
+	.b-structure .admin {
+		float: none;
+		width: 452px;
+		}
+		.b-structure .admin .title {
+			height: 72px;
+			}
+			.b-structure .admin .text {
+				height: 70px;
+				}
+		.b-structure .admin .desc {
+			width: 134px;
+			}
+	.b-structure .manage .title {
+		opacity: .75;
+		}
+	.b-structure .money {
+		width: 144px;
+		}
+		.b-structure .money .title {
+			opacity: .5;
+			}
+	.b-structure .care {
+		margin-top: 80px;
+		}
+
+/* Contacts */
+.b-contacts {
+	margin-bottom: 42px;
+	}
+	.b-contacts .fields {
+		float: left;
+		width: 152px;
+		padding-right: 20px;
+		}
+		.b-contacts .title {
+			margin: 0 0 12px 0;
+			font-size: 16px;
+			line-height: 21px;
+			}
+		.b-contacts .title {
+			margin-bottom: 12px;
+			}
+	.b-contacts .map {
+		float: left;
+		width: 300px;
+		margin-top: 6px;
+		}
+
+/* Documents */
+.b-docs {
+	margin: 0 0 42px 0;
+	padding-left: 60px;
+	font-size: 14px;
+	line-height: 18px;
+	}
+	.b-docs .item {
+		margin: 0 0 20px 0;
+		}
+	.b-docs .item:before {
+		content: none;
+		display: none;
+		}
+		.b-docs .link {
+			text-decoration: none;
+			}
+			.b-docs .b-icon {
+				margin-top: 1px;
+				}
+			.b-docs .title {
+				margin: 0;
+				font-size: 14px;
+				line-height: 18px;
+				font-weight: normal;
+				color: #231F20;
+				}
+			.b-docs .file {
+				margin-bottom: 12px;
+				text-decoration: underline;
+				}
+			.b-docs .meta {
+				color: #9C9999;
+				}
 
 /* =Project pages
 --------------------------------------- */
@@ -1334,6 +1488,8 @@ SUB {
 .c-about-link.disabled:hover,
 .c-about-page OL LI:before,
 .c-about-page .b-intro,
+.c-about-page .b-huge-intro,
+.c-about-page .b-sub-title,
 .c-about-page .b-square {
 	color: #FD9500 !important;
 	}
@@ -1360,6 +1516,8 @@ SUB {
 .c-gaidar-link.disabled:hover,
 .c-gaidar-page OL LI:before,
 .c-gaidar-page .b-intro,
+.c-gaidar-page .b-huge-intro,
+.c-gaidar-page .b-sub-title,
 .c-gaidar-page .b-square {
 	color: #E95429 !important;
 	}
@@ -1390,6 +1548,8 @@ SUB {
 .c-article-link.disabled:hover,
 .c-article-page OL LI:before,
 .c-article-page .b-intro,
+.c-article-page .b-huge-intro,
+.c-article-page .b-sub-title,
 .c-article-page .b-square {
 	color: #8D3192 !important;
 	}
@@ -1420,6 +1580,8 @@ SUB {
 .c-project-link.disabled:hover,
 .c-project-page OL LI:before,
 .c-project-page .b-intro,
+.c-project-page .b-huge-intro,
+.c-project-page .b-sub-title,
 .c-project-page .b-square {
 	color: #5A54A3 !important;
 	}
@@ -1450,6 +1612,8 @@ SUB {
 .c-news-link.disabled:hover,
 .c-news-page OL LI:before,
 .c-news-page .b-intro,
+.c-news-page .b-huge-intro,
+.c-news-page .b-sub-title,
 .c-news-page .b-square {
 	color: #005AA9 !important;
 	}
