@@ -46,7 +46,7 @@
 			<a class="link^if(in '/publications/'){ selected}" href="/publications/">Публикации^if(in '/publications/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
 		</li>
 		<li class="item projects">
-			<a class="link^if(in '/projects/'){ selected}" href="/projects/award/">Проекты^if(in '/projects/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
+			<a class="link^if(in '/projects/'){ selected}" href="/projects/">Проекты^if(in '/projects/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
 		</li>
 		<li class="item news">
 			<a class="link^if(in '/news/'){ selected}" href="/news/">Новости^if(in '/news/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
