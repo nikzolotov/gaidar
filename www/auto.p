@@ -8,6 +8,7 @@
 			<!--[if lte IE 7]>
 				<link rel="stylesheet" type="text/css" href="/css/ie7.css"/>
 			<![endif]-->
+			^additionalCSS[]
 			<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
 			<script type="text/javascript" src="/js/jquery.slideshow.js"></script>
 			<script type="text/javascript" src="/js/jquery.masonry.min.js"></script>
@@ -52,8 +53,6 @@
 		</li>
 	</ul>
 
-@content[]
-
 @navigationPart[]
 	<form class="b-search-form" method="get" action="?">
 		^searchFieldset[]
@@ -93,8 +92,6 @@
 			</li>
 		</ul>
 	</div>
-
-@partners[]
 
 @footer[]
 	<div class="l-inner l-wrapper">
@@ -196,3 +193,9 @@
 			</div>
 		</div>
 	</div>
+
+@additionalCSS[]
+
+@content[]
+
+@partners[]

@@ -171,7 +171,7 @@ SUB {
 		}
 
 /* Columns */
-.l-column-150 {
+.l-context {
 	float: left;
 	width: 150px;
 	}
@@ -225,18 +225,8 @@ SUB {
 .l-shift-20 {
 	padding-left: 20px;
 	}
-.l-lift-452 {
-	margin-top: 452px;
-	}
 .l-lift-686 {
 	margin-top: 686px;
-	}
-
-/* Background to reduce cover size */
-.l-cover-fix {
-	margin: -35px -86px 0 0;
-	padding: 35px 86px 0 0;
-	background: #FFF;
 	}
 
 /* =Clearfix and global

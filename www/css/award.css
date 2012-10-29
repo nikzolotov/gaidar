@@ -1,6 +1,16 @@
 ﻿/* Award layout */
 .l-award-page .l-container {
-	background: url('../img/covers/award.jpg') no-repeat 94% 43px
+	background: url('../img/covers/award.jpg') no-repeat 94% 43px;
+	}
+.l-award-page .l-context {
+	margin-top: 452px;
+	}
+
+/* Background to reduce cover size */
+.l-cover-fix {
+	margin: -35px -86px 0 0;
+	padding: 35px 86px 0 0;
+	background: #FFF;
 	}
 
 /* Award header */
