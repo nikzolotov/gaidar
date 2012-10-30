@@ -122,38 +122,73 @@
 		<script type="text/javascript">
 			^$('.b-promo').slideShow();
 		</script>
-		<ul class="b-events">
-			<li class="item">
-				<a class="link nearest-1" href="/publications/article.html">
-					<strong class="date"><span class="day">26</span>&nbsp;сентября</strong>
-					Конференция &laquo;Рождение и&nbsp;возрождение университетов&raquo;
-				</a>
-			</li>
-			<li class="item">
-				<a class="link nearest-2" href="/publications/article.html">
-					<strong class="date"><span class="day">3</span>&nbsp;октября</strong>
-					Лекция: &laquo;Финансовый сектор: груз или двигатель реальной экономики&raquo;
-				</a>
-			</li>
-			<li class="item">
-				<a class="link nearest-3" href="/publications/article.html">
-					<strong class="date"><span class="day from-1">19</span>&nbsp;октября</strong>
-					Научная конференция &laquo;Современный менеджмент: проблемы, гипотезы, исследования&raquo;
-				</a>
-			</li>
-			<li class="item">
-				<a class="link" href="/publications/article.html">
-					<strong class="date"><span class="day">23</span>&nbsp;октября</strong>
-					Семинар &laquo;Как стать успешным лидером&raquo;
-				</a>
-			</li>
-			<li class="item">
-				<a class="link" href="/publications/article.html">
-					<strong class="date"><span class="day">31</span>&nbsp;октября</strong>
-					Научная конференция &laquo;Проповедь покаяния как часть миссии церкви в&nbsp;Албании после <nobr>1990-х</nobr> гг.&raquo;
-				</a>
-			</li>
-		</ul>
+		<div class="b-slideshow">
+			<div class="frame">
+				<ul class="b-events slides">
+					<li class="item">
+						<a class="link nearest-1" href="/publications/article.html">
+							<strong class="date"><span class="day">26</span>&nbsp;сентября</strong>
+							Конференция &laquo;Рождение и&nbsp;возрождение университетов&raquo;
+						</a>
+					</li>
+					<li class="item">
+						<a class="link nearest-2" href="/publications/article.html">
+							<strong class="date"><span class="day">3</span>&nbsp;октября</strong>
+							Лекция: &laquo;Финансовый сектор: груз или двигатель реальной экономики&raquo;
+						</a>
+					</li>
+					<li class="item">
+						<a class="link nearest-3" href="/publications/article.html">
+							<strong class="date"><span class="day from-1">19</span>&nbsp;октября</strong>
+							Научная конференция &laquo;Современный менеджмент: проблемы, гипотезы, исследования&raquo;
+						</a>
+					</li>
+					<li class="item">
+						<a class="link" href="/publications/article.html">
+							<strong class="date"><span class="day">23</span>&nbsp;октября</strong>
+							Семинар &laquo;Как стать успешным лидером&raquo;
+						</a>
+					</li>
+					<li class="item">
+						<a class="link" href="/publications/article.html">
+							<strong class="date"><span class="day">31</span>&nbsp;октября</strong>
+							Научная конференция &laquo;Проповедь покаяния как часть миссии церкви в&nbsp;Албании после <nobr>1990-х</nobr> гг.&raquo;
+						</a>
+					</li>
+					<li class="item">
+						<a class="link" href="/publications/article.html">
+							<strong class="date"><span class="day">1</span>&nbsp;ноября</strong>
+							Конференция &laquo;Рождение и&nbsp;возрождение университетов&raquo;
+						</a>
+					</li>
+					<li class="item">
+						<a class="link" href="/publications/article.html">
+							<strong class="date"><span class="day">9</span>&nbsp;ноября</strong>
+							Лекция: &laquo;Финансовый сектор: груз или двигатель реальной экономики&raquo;
+						</a>
+					</li>
+					<li class="item">
+						<a class="link" href="/publications/article.html">
+							<strong class="date"><span class="day">17</span>&nbsp;ноября</strong>
+							Научная конференция &laquo;Современный менеджмент: проблемы, гипотезы, исследования&raquo;
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a class="arrow prev" href="?"><b class="b-graphics b-graphics-small-left-arrow"><b></b></b> назад</a>
+			<a class="arrow next" href="?"><b class="b-graphics b-graphics-small-right-arrow"><b></b></b> будущее</a>
+			<i class="b-left-fader"></i>
+			<i class="b-right-fader"></i>
+		</div>
+		<script type="text/javascript">
+			^$('.b-slideshow').slideShow({
+				slideSelector: '.b-events .item',
+				slideBy: 2,
+				slidePerPage: 5,
+				slideWidth: 122,
+				slideDistance: 20
+			});
+		</script>
 		<div class="l-column-472 l-intercolumn-28">
 			<div class="b-featured-article">
 				<a class="link c-gaidar-link" href="/publications/article.html">
