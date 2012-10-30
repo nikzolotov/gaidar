@@ -35,6 +35,9 @@
 	<a class="b-logo" href="/">
 		<img class="image" src="/img/logo.png" alt="Фонд Егора Гайдара"/>
 	</a>
+	^mainMenu[]
+
+@mainMenu[]
 	<ul class="b-main-menu">
 		<li class="item about">
 			<a class="link^if(in '/about/'){ selected}" href="/about/">О Фонде^if(in '/about/'){ <b class="b-graphics b-graphics-down-arrow"><b></b></b>}</a>
