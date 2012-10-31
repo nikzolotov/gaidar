@@ -703,6 +703,12 @@ SUB {
 	line-height: 40px;
 	}
 
+/* Long page title */
+.b-long-page-title {
+	font-size: 32px;
+	line-height: 32px;
+	}
+
 /* Highlighted page title */
 .b-separated-page-title {
 	margin: 20px 0 38px 0;
