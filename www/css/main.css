@@ -1265,6 +1265,9 @@ SUB {
 		.b-meta .link:hover {
 			color: #69BFD5;
 			}
+		.b-meta .selected {
+			display: none;
+			}
 .b-meta-after {
 	margin-top: 42px;
 	}

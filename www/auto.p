@@ -12,6 +12,7 @@
 			<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
 			<script type="text/javascript" src="/js/jquery.slideshow.js"></script>
 			<script type="text/javascript" src="/js/jquery.masonry.min.js"></script>
+			<script type="text/javascript" src="/js/jquery.tabs.js"></script>
 			<script type="text/javascript" src="/js/jquery.hints.js"></script>
 			<script type="text/javascript" src="/js/main.js"></script>
 		</head>

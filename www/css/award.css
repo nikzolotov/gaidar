@@ -8,6 +8,7 @@
 
 /* Background to reduce cover size */
 .l-cover-fix {
+	min-height: 400px;
 	margin: -35px -108px 0 0;
 	padding: 35px 108px 0 0;
 	background: #FFF;
