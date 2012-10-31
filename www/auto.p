@@ -96,6 +96,39 @@
 		</ul>
 	</div>
 
+@social[]
+	<h2>Оставайтесь на&nbsp;связи</h2>
+	<ul class="b-social-links">
+		<li class="item">
+			<a class="link" href="http://facebook.com/" title="Группа Фонда в Facebook" rel="nofollow">
+				<b class="b-icon b-icon-fb"><b>Группа Фонда в&nbsp;Facebook</b></b>
+			</a>
+		</li>
+		<li class="item">
+			<a class="link" href="http://www.twitter.com/Gaidar_fund" title="Лента новостей в Twitter" rel="nofollow">
+				<b class="b-icon b-icon-twitter"><b>Лента новостей в&nbsp;Twitter</b></b>
+			</a>
+		</li>
+		<li class="item">
+			<a class="link" href="http://vkontakte.ru/gaidarfund" title="Группа Фонда Вконтакте" rel="nofollow">
+				<b class="b-icon b-icon-vk"><b>Группа Фонда Вконтакте</b></b>
+			</a>
+		</li>
+		<li class="item">
+			<a class="link" href="http://youtube.com/" title="Видео-канал Фонда" rel="nofollow">
+				<b class="b-icon b-icon-youtube"><b>Видео-канал Фонда</b></b>
+			</a>
+		</li>
+		<li class="item">
+			<a class="link" href="http://gaidar-fund.livejournal.com/" title="Дискуссии в ЖЖ" rel="nofollow">
+				<b class="b-icon b-icon-lj"><b>Дискуссии в&nbsp;ЖЖ</b></b>
+			</a>
+		</li>
+	</ul>
+	<div>
+		<img src="/img/tmp/social-links.png" alt=""/>
+	</div>
+
 @footer[]
 	<div class="l-inner l-wrapper">
 		<div class="l-column-210 l-intercolumn-30 l-shift-10">

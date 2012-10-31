@@ -235,6 +235,7 @@ SUB {
 /* Clearfix */
 .l-wrapper:after,
 .b-main-menu:after,
+.b-social-links:after,
 .b-events:after,
 .b-meta:after,
 .b-structure:after,
@@ -492,23 +493,49 @@ SUB {
 /* Icons */
 .b-icon {
 	position: absolute;
-	width: 36px;
-	height: 36px;
-	margin-left: -43px;
+	width: 16px;
+	height: 16px;
+	margin-left: -20px;
 	overflow: hidden;
 	}
 	.b-icon B {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 74px;
-		height: 37px;
+		width: 85px;
+		height: 54px;
 		background: url("../img/icons.png") no-repeat;
 		text-indent: -9999px;
 		}
-.b-icon-pdf B {
-	left: -37px;
+.b-icon-twitter B {
+	left: -17px;
 	}
+.b-icon-vk B {
+	left: -34px;
+	}
+.b-icon-youtube B {
+	left: -51px;
+	}
+.b-icon-lj B {
+	left: -68px;
+	}
+.b-icon-xls {
+	width: 36px;
+	height: 36px;
+	margin-left: -43px;
+	}
+	.b-icon-xls B {
+		top: -17px;
+		}
+.b-icon-pdf {
+	width: 36px;
+	height: 36px;
+	margin-left: -43px;
+	}
+	.b-icon-pdf B {
+		top: -17px;
+		left: -37px;
+		}
 
 /* Stencil graphics */
 .b-graphics {
@@ -846,6 +873,30 @@ SUB {
 		.b-context-links .link {
 			text-decoration: none;
 			}
+
+/* Social links */
+.b-social-links {
+	margin: 0 0 25px -3px;
+	}
+	.b-social-links .item {
+		float: left;
+		margin: 0 0 0 3px;
+		}
+	.b-social-links .item:before {
+		content: none;
+		display: none;
+		}
+		.b-social-links .link {
+			display: block;
+			}
+		.b-social-links .link:hover {
+			opacity: .75;
+			}
+			.b-social-links .b-icon {
+				position: relative;
+				display: block;
+				margin: 0;
+				}
 
 /* Promo on index page */
 .b-promo {
