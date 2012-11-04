@@ -861,6 +861,19 @@ SUB {
 	top: -49px;
 	left: 250px;
 	}
+	.b-share .facebook {
+		float: left;
+		width: 95px;
+		padding-top: 1px;
+		}
+	.b-share .vkontakte {
+		float: left;
+		width: 103px;
+		}
+	.b-share .google {
+		float: left;
+		width: 90px;
+		}
 
 /* Context links */
 .b-context-links {
@@ -1687,6 +1700,44 @@ SUB {
 .b-search-form-separated {
 	margin: 98px 0 88px 0;
 	}
+
+/* =Projects
+--------------------------------------- */
+
+/* Project header */
+.b-project-header {
+	position: relative;
+	min-height: 210px;
+	margin-bottom: 24px;
+	padding-top: 34px;
+	}
+	.b-project-header .b-share {
+		top: -25px;
+		left: 0;
+		}
+	.b-project-header .title {
+		margin: 0 0 8px -2px;
+		text-transform: uppercase;
+		font-size: 48px;
+		line-height: 48px;
+		font-weight: bold;
+		}
+		.b-project-header .link {
+			text-decoration: none;
+			color: #231F20;
+			}
+			.b-project-header .year {
+				bottom: 30px;
+				left: -12px;
+				font: bold 24px/24px "Franklin Gothic", Arial, Helvitica, sans-serif;
+				color: #E95429;
+				}
+	.b-project-header .desc {
+		width: 300px;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 20px;
+		}
 
 /* =Color coding
 --------------------------------------- */
