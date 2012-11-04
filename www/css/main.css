@@ -1521,6 +1521,32 @@ SUB {
 				color: #9C9999;
 				}
 
+/* Persons */
+.b-persons {
+	margin: 24px 0 48px 0;
+	}
+	.b-persons .item {
+		margin: 0 0 32px 0;
+		padding-left: 132px;
+		overflow: hidden;
+		}
+	.b-persons .item:before {
+		content: none;
+		display: none;
+		}
+		.b-persons .title {
+			margin: 0 0 8px 0;
+			line-height: 22px;
+			text-transform: uppercase;
+			}
+			.b-persons .image {
+				float: left;
+				margin-left: -132px;
+				}
+		.b-persons .desc {
+			margin: 0;
+			}
+
 /* Project summary */
 .b-project {
 	margin-bottom: 32px;
