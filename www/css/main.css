@@ -1090,6 +1090,10 @@ SUB {
 		.b-events .nearest-3:hover {
 			color: #676767;
 			}
+.b-events-compact .item {
+	width: 210px;
+	margin-right: 24px
+	}
 
 /* Featured article */
 .b-featured-article {
