@@ -775,6 +775,12 @@ SUB {
 .b-text-link:hover {
 	color: #676767 !important;
 	}
+	.b-text-link .b-graphics B {
+		background-color: #231F20;
+		}
+	.b-text-link:hover .b-graphics B {
+		background-color: #676767;
+		}
 
 /* Intro or some description */
 .b-intro,
