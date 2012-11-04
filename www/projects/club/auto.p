@@ -1,5 +1,5 @@
 ﻿@additionalCSS[]
-	<link rel="stylesheet" type="text/css" href="/css/award.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="/css/club.css" media="screen"/>
 
 @navigation[]
 	<form class="b-search-form b-search-form-separated" method="get" action="?">

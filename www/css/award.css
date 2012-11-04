@@ -2,21 +2,23 @@
 .l-award-page .l-container {
 	background: url('../img/covers/award.jpg') no-repeat 98% 44px;
 	}
+.l-award-page .l-wide-context {
+	margin-top: 484px;
+	}
 .l-award-page .l-context {
-	margin-top: 452px;
+	margin-top: 250px;
 	}
 
 /* Background to reduce cover size */
 .l-cover-fix {
 	min-height: 400px;
-	margin: -35px -108px 0 0;
-	padding: 35px 108px 0 0;
+	margin: -31px -108px 0 0;
+	padding: 31px 108px 0 0;
 	background: #FFF;
 	}
 
 /* Award header */
 .b-project-header-award {
-	width: 320px;
 	min-height: auto;
 	}
 	.b-project-header-award .title {
