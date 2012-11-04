@@ -167,7 +167,7 @@ SUB {
 		}
 	.l-footer {
 		overflow: hidden;
-		padding: 5px 0;
+		padding-top: 5px;
 		}
 
 /* Columns */
@@ -474,19 +474,30 @@ SUB {
 		background: #883C96;
 		}
 
-/* Copyright */
+/* Copyrights */
 .b-copyright {
-	padding-top: 28px;
+	position: relative;
+	padding-top: 27px;
 	font-size: 12px;
 	line-height: 16px;
 	color: #676767;
 	}
 	.b-copyright .link {
-		color: #4B75B9;
+		color: #000;
 		}
 	.b-copyright .link:hover {
-		color: #69BFD5;
+		color: #676767;
 		}
+
+/* Design logo */
+.b-f26 {
+	position: absolute;
+	top: 15px;
+	right: -6px;
+	width: 57px;
+	height: 55px;
+	background: url('../img/containers/f26.png') no-repeat;
+	}
 
 /* =Simple blocks
 --------------------------------------- */
