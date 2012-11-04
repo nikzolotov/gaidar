@@ -1657,6 +1657,14 @@ SUB {
 		margin-bottom: 0;
 		}
 
+/* Facebook block */
+.b-facebook {
+	position: relative;
+	width: 185px;
+	margin-top: -11px;
+	overflow: hidden;
+	}
+
 /* =Banners
 --------------------------------------- */
 
