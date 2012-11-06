@@ -825,6 +825,7 @@ SUB {
 		display: none;
 		}
 		.b-menu .link {
+			padding: 1px 0;
 			text-decoration: none;
 			}
 		.b-menu .disabled {
@@ -881,7 +882,7 @@ SUB {
 	}
 	.b-share .facebook {
 		float: left;
-		width: 95px;
+		width: 149px;
 		padding-top: 1px;
 		}
 	.b-share .vkontakte {
