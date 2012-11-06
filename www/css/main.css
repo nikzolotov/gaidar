@@ -1528,7 +1528,7 @@ SUB {
 	}
 	.b-persons .item {
 		margin: 0 0 32px 0;
-		padding-left: 132px;
+		padding: 15px 0 0 140px;
 		overflow: hidden;
 		}
 	.b-persons .item:before {
@@ -1542,7 +1542,7 @@ SUB {
 			}
 			.b-persons .image {
 				float: left;
-				margin-left: -132px;
+				margin: -15px 0 0 -140px;
 				}
 		.b-persons .desc {
 			margin: 0;
