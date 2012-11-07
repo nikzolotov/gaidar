@@ -4,6 +4,10 @@
 	}
 
 /* Theory header */
+.b-project-header-theory .title {
+	font-size: 36px;
+	line-height: 36px;
+	}
 .b-project-header-theory .quote {
 	position: absolute;
 	top: 115px;

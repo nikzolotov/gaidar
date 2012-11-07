@@ -1828,10 +1828,6 @@ SUB {
 				font: bold 24px/24px "Franklin Gothic", Arial, Helvitica, sans-serif;
 				color: #E95429;
 				}
-	.b-project-header .long {
-		font-size: 36px;
-		line-height: 36px;
-		}
 	.b-project-header .desc {
 		width: 275px;
 		text-transform: uppercase;

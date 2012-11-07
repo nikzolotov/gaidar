@@ -1,0 +1,34 @@
+﻿/* Summer layout */
+.l-summer-page .l-container {
+	background: url('../img/covers/summer.jpg') no-repeat 100% 69px;
+	}
+.l-summer-page .l-wide-context {
+	margin-top: 102px;
+	}
+.l-summer-page .l-context {
+	margin-top: 250px;
+	}
+
+/* Background to reduce cover size */
+.l-cover-fix {
+	min-height: 400px;
+	margin: -31px -108px 0 0;
+	padding: 31px 108px 0 0;
+	background: #FFF;
+	}
+
+/* Summer header */
+.b-project-header-summer {
+	width: 400px;
+/*
+	min-height: auto;
+	margin-bottom: 24px;*/
+	}
+	.b-project-header-summer .title {
+		font-size: 46px;
+	/*
+		margin-bottom: 0;*/
+		}
+		.b-project-header-summer .year {
+			color: #FFF;
+			}
