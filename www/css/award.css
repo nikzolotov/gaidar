@@ -20,6 +20,7 @@
 /* Award header */
 .b-project-header-award {
 	min-height: auto;
+	margin-bottom: 24px;
 	}
 	.b-project-header-award .title {
 		margin-bottom: 0;

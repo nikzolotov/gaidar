@@ -710,6 +710,16 @@ SUB {
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0), #FFF);
 	}
 
+/* Line pointer */
+.b-pointer {
+	position: absolute;
+	top: -57px;
+	left: 71px;
+	width: 47px;
+	height: 57px;
+	background: url('../img/pointers.png') no-repeat;
+	}
+
 /* =Content blocks
 --------------------------------------- */
 
@@ -1590,6 +1600,10 @@ SUB {
 			text-transform: uppercase;
 			font-size: 24px;
 			}
+		.b-project-title-long {
+			font-size: 18px;
+			line-height: 20px;
+			}
 		.b-project-link .text {
 			display: block;
 			margin-bottom: 6px;
@@ -1789,8 +1803,8 @@ SUB {
 .b-project-header {
 	position: relative;
 	width: 320px;
-	min-height: 210px;
-	margin-bottom: 24px;
+	min-height: 200px;
+	margin-bottom: 34px;
 	padding-top: 34px;
 	}
 	.b-project-header .b-share {
@@ -1814,6 +1828,10 @@ SUB {
 				font: bold 24px/24px "Franklin Gothic", Arial, Helvitica, sans-serif;
 				color: #E95429;
 				}
+	.b-project-header .long {
+		font-size: 36px;
+		line-height: 36px;
+		}
 	.b-project-header .desc {
 		width: 275px;
 		text-transform: uppercase;

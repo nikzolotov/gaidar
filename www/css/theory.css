@@ -1,0 +1,31 @@
+﻿/* Theory layout */
+.l-theory-page .l-container {
+	background: url('../img/covers/theory.png') no-repeat 660px 200px;
+	}
+
+/* Theory header */
+.b-project-header-theory .quote {
+	position: absolute;
+	top: 115px;
+	left: 446px;
+	margin: 0;
+	padding: 0;
+	}
+	.b-project-header-theory .person {
+		display: block;
+		height: 87px;
+		}
+		.b-project-header-theory .image {
+			display: block;
+			}
+	.b-project-header-theory .text {
+		position: absolute;
+		right: -181px;
+		bottom: 116px;
+		width: 140px;
+		text-transform: uppercase;
+		font-size: 10px;
+		line-height: 14px;
+		font-style: italic;
+		color: #231F20;
+		}
