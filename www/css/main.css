@@ -1314,6 +1314,10 @@ SUB {
 			font-size: 14px;
 			color: #676767;
 			}
+	.b-meta .b-share {
+		position: static;
+		float: left;
+		}
 	.b-meta .disqussion {
 		float: right;
 		padding-top: 2px;
