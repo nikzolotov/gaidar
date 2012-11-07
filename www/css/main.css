@@ -900,6 +900,7 @@ SUB {
 	position: absolute;
 	top: -49px;
 	left: 250px;
+	width: 350px;
 	}
 	.b-share .facebook {
 		float: left;
