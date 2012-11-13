@@ -1736,6 +1736,21 @@ SUB {
 	overflow: hidden;
 	}
 
+/* Disqus comments */
+.b-disqus {
+	margin: 12px 0 32px 0;
+	padding: 2px 20px;
+	border: 1px solid #DDD;
+	background: #EEE;
+	
+	font-size: 12px;
+	line-height: 16px;
+	}
+	.b-disqus UL LI:before {
+		content: none;
+		display: none;
+		}
+
 /* =Banners
 --------------------------------------- */
 
