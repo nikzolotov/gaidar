@@ -1,0 +1,18 @@
+/* Myths layout */
+.l-myths-page .l-container {
+	background-repeat: no-repeat;
+	background-position: 100% 128px;
+	}
+
+/* Myths header */	
+.b-project-header-myths {
+	min-height: 100px;
+	}
+	.b-project-header-myths .title {
+		margin: 20px 0 38px -2px; 
+		font-size: 34px;
+		line-height: 38px;
+		}
+	.b-project-header-myths .desc {
+		width: 475px;
+		}

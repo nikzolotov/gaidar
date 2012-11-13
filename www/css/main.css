@@ -894,6 +894,10 @@ SUB {
 			border: none;
 			color: #231F20;
 			}
+.b-tab-menu-compact {
+	margin-top: 32px;
+	margin-bottom: 21px;
+	}
 
 /* Share */
 .b-share {
