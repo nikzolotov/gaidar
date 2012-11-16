@@ -58,7 +58,7 @@
 	</ul>
 
 @navigationPart[]
-	<form class="b-search-form" method="get" action="?">
+	<form class="b-search-form" method="get" action="/search/">
 		^searchFieldset[]
 	</form>
 	^projectsNavigation[]

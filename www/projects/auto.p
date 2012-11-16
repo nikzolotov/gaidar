@@ -1,5 +1,5 @@
 ﻿@navigation[]
-	<form class="b-search-form b-search-form-separated" method="get" action="?">
+	<form class="b-search-form b-search-form-separated" method="get" action="/search/">
 		^searchFieldset[]
 	</form>
 	<h2 class="b-navigation-title">О проекте</h2>
