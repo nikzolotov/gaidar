@@ -1768,7 +1768,7 @@ SUB {
 
 /* Small yellow block */
 .b-yellow-block {
-	width: 292px;
+	width: 346px;
 	margin-bottom: 36px;
 	padding: 20px;
 	background: #FEF3D7;
@@ -1821,23 +1821,30 @@ SUB {
 	color: #888;
 	}
 
-/* Select */
-.b-select {
-	font-size: 14px;
-	}
-
-/* Radio buttons */
-.b-radio {
+/* Radio or checkboxes */
+.b-choise {
 	margin-bottom: 18px;
 	padding-left: 18px;
+	font-size: 14px;
+	line-height: 18px;
 	}
-	.b-radio .item {
+	.b-choise .item {
+		margin-bottom: 9px;
+		}
+		.b-choise .input {
+			float: left;
+			margin: 2px 0 0 -18px;
+			padding: 0;
+			}
+.b-choise-compact {
+	font-size: 12px;
+	line-height: 16px;
+	}
+	.b-choise-compact .item {
 		margin-bottom: 6px;
 		}
-		.b-radio .input {
-			float: left;
-			margin: 1px 0 0 -18px;
-			padding: 0;
+		.b-choise-compact .input {
+			margin-top: 1px;
 			}
 
 /* Submit button */
@@ -1874,14 +1881,6 @@ SUB {
 .b-search-form-separated {
 	margin: 98px 0 88px 0;
 	}
-
-/* Order form */
-.b-order-form {
-	width: 250px;
-	}
-	.b-order-form .b-select {
-		width: 250px;
-		}
 
 /* =Projects
 --------------------------------------- */

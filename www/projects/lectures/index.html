@@ -26,23 +26,34 @@
 				</ol>
 			</div>
 			<div class="b-yellow-block">
-				<form class="b-order-form" action="?">
+				<form action="?">
 					<fieldset>
-						<div class="b-field">
-							<label class="b-label" for="f-lecture">Лекция</label>
-							<select id="f-lecture" class="b-select" name="lecture">
-								<option>Лекция Андрея Нечаева: «Предотвращенная катастрофа»</option>
-							</select>
+						<label class="b-label">Лекция</label>
+						<div class="b-field b-choise">
+							<div class="item">
+								<input id="f-lecture-1" class="input" type="checkbox" name="lecture" value="1"/>
+								<label for="f-lecture-1" class="label">14 декабря, «Интеллектуальная подготовка реформ&nbsp;90-х»<br/><a href="?desc-1" target="_blank">Описание лекции</a></label>
+							</div>
+							<div class="item">
+								<input id="f-lecture-2" class="input" type="checkbox" name="lecture" value="1"/>
+								<label for="f-lecture-2" class="label">12 декабря, «Цена промедления: почему реформы 90-х оказались безальтернативными?»<br/><a href="?desc-2" target="_blank">Описание лекции</a></label>
+							</div>
+							<div class="item">
+								<input id="f-lecture-3" class="input" type="checkbox" name="lecture" value="1"/>
+								<label for="f-lecture-3" class="label">11 декабря, «Некоторые мифы о&nbsp;реформах 90-х: что же&nbsp;было на&nbsp;самом деле»<br/><a href="?desc-3" target="_blank">Описание лекции</a></label>
+							</div>
 						</div>
-						<div class="b-field b-wide-input">
-							<label class="b-label" for="f-fio">Ваше имя и фамилия</label>
-							<input id="f-fio" class="b-input" type="text" name="fio"/>
+						<div class="l-intercolumn-40">
+							<div class="b-field b-wide-input">
+								<label class="b-label" for="f-fio">Ваше имя и фамилия</label>
+								<input id="f-fio" class="b-input" type="text" name="fio"/>
+							</div>
+							<div class="b-field b-wide-input">
+								<label class="b-label" for="f-email">Ваш e-mail</label>
+								<input id="f-email" class="b-input" type="text" name="email"/>
+							</div>
+							<input class="b-submit" type="submit" value="Записаться"/>
 						</div>
-						<div class="b-field b-wide-input">
-							<label class="b-label" for="f-email">Ваш e-mail</label>
-							<input id="f-email" class="b-input" type="text" name="email"/>
-						</div>
-						<input class="b-submit" type="submit" value="Записаться"/>
 					</fieldset>
 				</form>
 				<!--
