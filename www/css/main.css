@@ -233,6 +233,11 @@ SUB {
 	padding-left: 20px;
 	}
 
+/* Column wrappers */
+.l-wrapper-36 {
+	margin-bottom: 36px;
+	}
+
 /* =Clearfix and global
 --------------------------------------- */
 
@@ -1761,6 +1766,14 @@ SUB {
 		display: none;
 		}
 
+/* Small yellow block */
+.b-yellow-block {
+	width: 292px;
+	margin-bottom: 36px;
+	padding: 20px;
+	background: #FEF3D7;
+	}
+
 /* =Banners
 --------------------------------------- */
 
@@ -1775,6 +1788,14 @@ SUB {
 /* =Form elements
 --------------------------------------- */
 
+/* Label */
+.b-label {
+	display: block;
+	margin-bottom: 4px;
+	font-size: 16px;
+	font-weight: bold;
+	}
+
 /* Label goes to input */
 .b-hint-label {
     display: none;
@@ -1783,12 +1804,26 @@ SUB {
 /* Simple text input */
 .b-input {
 	margin: 0;
-	padding: 5px 10px;
+	font-size: 14px;
+	}
+
+/* 100% width input with wrapper */
+.b-wide-input INPUT {
+	width: 100%;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box !important;
 	}
 
 /* Input with grey hint */
 .b-hint-input {
 	color: #888;
+	}
+
+/* Select */
+.b-select {
+	font-size: 14px;
 	}
 
 /* Radio buttons */
@@ -1812,6 +1847,18 @@ SUB {
 	font-size: 14px;
 	}
 
+/* Form field */
+.b-field {
+	margin-bottom: 16px;
+	}
+
+/* Form message */
+.b-form-message {
+	margin-bottom: 9px;
+	line-height: 20px;
+	font-weight: bold;
+	}
+
 /* =Forms
 --------------------------------------- */
 
@@ -1821,11 +1868,20 @@ SUB {
 	}
 	.b-search-form .b-input {	
 		width: 150px;
+		padding: 5px 10px;
 		font-size: 12px;
 		}
 .b-search-form-separated {
 	margin: 98px 0 88px 0;
 	}
+
+/* Order form */
+.b-order-form {
+	width: 250px;
+	}
+	.b-order-form .b-select {
+		width: 250px;
+		}
 
 /* =Projects
 --------------------------------------- */

@@ -97,8 +97,8 @@
 		</ul>
 	</div>
 
-@social[]
-	<h2>Оставайтесь на&nbsp;связи</h2>
+@social[_isFirst]
+	<h2^if($_isFirst){ class="b-first-title"}>Оставайтесь на&nbsp;связи</h2>
 	<ul class="b-social-links">
 		<li class="item">
 			<a class="link" href="http://facebook.com/" title="Группа Фонда в Facebook" rel="nofollow">

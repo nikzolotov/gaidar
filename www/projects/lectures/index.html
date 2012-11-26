@@ -1,0 +1,62 @@
+﻿@auto[]
+	$bodyClass[l-grants-page]
+
+@content[]
+	<div class="l-column-210 l-intercolumn-40">
+		^navigation[]
+	</div>
+	<div class="l-column-710">
+		<div class="b-project-header">
+			<div class="b-share">
+				<img src="/img/tmp/likes.png" alt=""/>
+			</div>
+			<h1 class="title">
+				<a class="link" href="/projects/grants/">Лекции</a>
+			</h1>
+			<p class="desc">Подзаголовок или какая-то служебная информация, касающаяся текущего статуса проекта, участвующих в нем людей и&nbsp;прочего в этом роде</p>
+		</div>
+		<div class="l-column-472 l-intercolumn-28">
+			<h2 class="b-first-title">Запись на лекцию</h2>
+			<div class="l-wrapper-36">
+				<p>Запись на&nbsp;лекцию не&nbsp;является обязательной, однако записавшись вы&nbsp;тем самым:</p>
+				<ol>
+					<li>Помогаете организаторам определеить ориентировочное количество слушателей</li>
+					<li>Получаете возможность получения оповещения от&nbsp;организаторов в&nbsp;случае возможного переноса лекции или переполнения аудитории</li>
+					<li>Указываете на&nbsp;интерес к&nbsp;теме лекции</li>
+				</ol>
+			</div>
+			<div class="b-yellow-block">
+				<form class="b-order-form" action="?">
+					<fieldset>
+						<div class="b-field">
+							<label class="b-label" for="f-lecture">Лекция</label>
+							<select id="f-lecture" class="b-select" name="lecture">
+								<option>Лекция Андрея Нечаева: «Предотвращенная катастрофа»</option>
+							</select>
+						</div>
+						<div class="b-field b-wide-input">
+							<label class="b-label" for="f-fio">Ваше имя и фамилия</label>
+							<input id="f-fio" class="b-input" type="text" name="fio"/>
+						</div>
+						<div class="b-field b-wide-input">
+							<label class="b-label" for="f-email">Ваш e-mail</label>
+							<input id="f-email" class="b-input" type="text" name="email"/>
+						</div>
+						<input class="b-submit" type="submit" value="Записаться"/>
+					</fieldset>
+				</form>
+				<!--
+				<div class="b-form-message b-last-textblock">Спасибо за&nbsp;помощь организаторам.<br/> Ждем вас!</div>
+				-->
+				<!--
+				<div class="b-form-message">Вы&nbsp;уже записались на&nbsp;лекцию.</div>
+				<a href="b-action-link">Отказаться от&nbsp;участия</a>
+				-->
+			</div>
+		</div>
+		<div class="l-wide-context">
+			<div class="l-shift-20">
+				^social(true)
+			</div>
+		</div>
+	</div>
