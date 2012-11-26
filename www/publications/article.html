@@ -1,6 +1,9 @@
 ﻿@auto[]
 	$bodyClass[c-article-page]
 
+@additionalJS[]
+	<script type="text/javascript" src="/js/jquery.desc.js"></script>
+
 @content[]
 	<div class="l-column-210 l-intercolumn-40">
 		^navigationPart[]
@@ -97,6 +100,9 @@
 							<li> приписываются Екатерине&nbsp;II, и&nbsp;сказала она их&nbsp;будто&nbsp;бы, был предан военному суду за&nbsp;штурм.</li>
 						</ol>
 						<p>Завоевав в&nbsp;390 году до&nbsp;н.э. гордый Рим, предводитель галлов Бренн наложил на&nbsp;него контрибуцию (военный налог) в&nbsp;тысячу фунтов золота. Они отказались платить. Но&nbsp;завоеватель, швырнув на&nbsp;чашу весов свой грузный меч, воскликнул: &laquo;Vae victis!&raquo;&nbsp;&mdash; то&nbsp;есть: &laquo;Горе побежденным!&raquo;&nbsp;&mdash; и&nbsp;дело было решено. Слова эти, ставшие крылатыми, приписываются Екатерине II.</p>
+						<div class="article-desc" title="Полная история завоеваний" hide-title="Скрыть полную историю завоеваний">
+							<p>Римлянам в&nbsp;час расплаты показалось, что-то уж&nbsp;больно тяжелы. Они отказались платить. Но&nbsp;завоеватель, швырнув на&nbsp;чашу весов свой грузный меч, воскликнул: &laquo;Vae victis!&raquo;&nbsp;&mdash; то&nbsp;есть: &laquo;Горе побежденным!&raquo;&nbsp;&mdash; и&nbsp;дело было решено.</p>
+						</div>
 						<blockquote class="b-compact-quote">
 							<p>Горе побежденным! Победителей не&nbsp;судят! Квинтилий Вар, верни мне моих свиней! Множество раз с&nbsp;тех пор повторялись эти жестокие слова в&nbsp;жестоком старом мире</p>
 						</blockquote>
@@ -110,6 +116,9 @@
 					^$('#article-tabs').tabs({
 						tabSelector: '.article-tab',
 						generateMenu: true
+					});
+					^$('#article-tabs .article-desc').desc({
+						
 					});
 				</script>
 			</div>

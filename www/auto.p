@@ -15,6 +15,7 @@
 			<script type="text/javascript" src="/js/jquery.tabs.js"></script>
 			<script type="text/javascript" src="/js/jquery.hints.js"></script>
 			<script type="text/javascript" src="/js/main.js"></script>
+			^additionalJS[]
 		</head>
 		<body^if(def $bodyClass){ class="$bodyClass"}>
 			<div class="l-container">
@@ -235,6 +236,8 @@
 	</div>
 
 @additionalCSS[]
+
+@additionalJS[]
 
 @content[]
 
