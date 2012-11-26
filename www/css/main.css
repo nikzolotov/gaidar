@@ -152,6 +152,9 @@ SUB {
 	margin: 0 auto;
 	padding: 0 20px;
 	}
+.l-container {
+	background-position: 100% 128px;
+	}
 	.l-header {
 		position: relative;
 		min-height: 123px;
