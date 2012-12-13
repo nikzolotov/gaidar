@@ -663,6 +663,15 @@ SUB {
 	.b-graphics-square B {
 		background-image: none;
 		}
+.b-graphics-7-square {
+	top: 4px;
+	left: 0;
+	width: 7px;
+	height: 7px;
+	}
+	.b-graphics-7-square B {
+		background-image: none;
+		}
 .b-graphics-prev {
 	width: 43px;
 	height: 51px;
@@ -1211,7 +1220,7 @@ SUB {
 	line-height: 16px;
 	color: #676767;
 	}
-	.b-article .link {
+	.b-article-link {
 		display: block;
 		text-decoration: none;
 		}
@@ -1238,6 +1247,20 @@ SUB {
 	.b-article .desc {
 		margin: 0;
 		}
+	.b-article .meta {
+		position: relative;
+		margin-top: 4px;
+		padding-left: 12px;
+		font-size: 11px;
+		line-height: 14px;
+		}
+		.b-article .meta .link {
+			text-decoration: none;
+			color: #676767;
+			}
+			.b-article .b-graphics-7-square {
+				left: 1px;
+				}
 .b-article-illustrated .b-section-label {
 	position: absolute;
 	top: 8px;
