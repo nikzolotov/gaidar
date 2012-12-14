@@ -76,7 +76,7 @@
 				</div>
 				<div class="disqussion">
 					<a class="link" href="#article">Текст статьи</a>
-					<a class="link" href="#disqussion">Обсуждение (37)</a>
+					<a class="link" href="#disqus_thread">Обсуждение (37)</a>
 				</div>
 			</div>
 			<div id="article" class="js-tab">
@@ -122,7 +122,7 @@
 					});
 				</script>
 			</div>
-			<div id="disqussion" class="js-tab">
+			<div id="disqus_thread" class="js-tab">
 				<div class="b-disqus">
 					<div id="disqus_thread"></div>
 					<script type="text/javascript">
@@ -185,3 +185,19 @@
 			</ul>
 		</div>
 	</div>
+
+@beforeBodyJS[]
+	<script type="text/javascript">
+		(function () {
+			/*
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			*/
+			
+			^$.getScript('http://' + disqus_shortname + '.disqus.com/count.js', function( data, textStatus, jqxhr ){
+				
+			});
+		}());
+	</script>

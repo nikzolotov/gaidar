@@ -30,6 +30,7 @@
 			<div class="l-footer">
 				^footer[]
 			</div>
+			^beforeBodyJS[]
 		</body>
 	</html>
 
@@ -242,3 +243,5 @@
 @content[]
 
 @partners[]
+
+@beforeBodyJS[]
