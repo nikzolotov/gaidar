@@ -76,7 +76,7 @@
 				</div>
 				<div class="disqussion">
 					<a class="link" href="#article">Текст статьи</a>
-					<a class="link" href="#disqus_thread">Обсуждение (37)</a>
+					<a class="link" href="#disqussion">Обсуждение</a>
 				</div>
 			</div>
 			<div id="article" class="js-tab">
@@ -122,7 +122,7 @@
 					});
 				</script>
 			</div>
-			<div id="disqus_thread" class="js-tab">
+			<div id="disqussion" class="js-tab">
 				<div class="b-disqus">
 					<div id="disqus_thread"></div>
 					<script type="text/javascript">
@@ -148,7 +148,7 @@
 				</div>
 				<div class="disqussion">
 					<a class="link" href="#article">Текст статьи</a>
-					<a class="link" href="#disqussion">Обсуждение (37)</a>
+					<a class="link" href="#disqussion">Обсуждение</a>
 				</div>
 			</div>
 			<div class="b-nearest-articles">
@@ -187,17 +187,21 @@
 	</div>
 
 @beforeBodyJS[]
+	<a id="disqus-comments-count" href="#disqus_thread" style="display: none;">Disqus comments count</a>
 	<script type="text/javascript">
 		(function () {
-			/*
-			var s = document.createElement('script'); s.async = true;
-			s.type = 'text/javascript';
-			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-			*/
+			var countLink = ^$('#disqus-comments-count'),
+				disqussionLinks = ^$('.b-meta .link[href=#disqussion]');
 			
-			^$.getScript('http://' + disqus_shortname + '.disqus.com/count.js', function( data, textStatus, jqxhr ){
-				
+			^$.getScript('http://' + disqus_shortname + '.disqus.com/count.js', function(){
+				setTimeout(function(){
+					var commentsCount = /^^\d+/.exec(countLink.text()),
+						commentsCount = parseInt(commentsCount[0], 10);
+					
+					if( commentsCount > 0 ){
+						disqussionLinks.text('Обсуждение (' + commentsCount + ')');
+					}
+				}, 500);
 			});
 		}());
 	</script>
