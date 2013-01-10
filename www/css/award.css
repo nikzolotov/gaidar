@@ -19,7 +19,7 @@
 
 /* Award header */
 .b-project-header-award {
-	min-height: auto;
+	min-height: 0;
 	margin-bottom: 24px;
 	}
 	.b-project-header-award .title {
