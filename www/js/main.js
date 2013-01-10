@@ -6,7 +6,7 @@ $(function(){
 	var filter = $('#filter');
 	
 	if( filter.length ){
-		var scrollTop = 0,
+		var scrollTop = $(document).scrollTop(),
 			filterHeight = filter.height(),
 			fixedFilterClass = 'b-fixed-filter',
 			bottomFilterClass = 'b-bottom-filter',

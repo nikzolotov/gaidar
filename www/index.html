@@ -1,7 +1,12 @@
 ﻿@content[]
 	<div class="l-column-210 l-intercolumn-40">
 		^navigationPart[]
-		<h2 class="b-navigation-title">Календарь</h2>
+		<h2 class="b-navigation-title">
+			<span class="inner">
+				Календарь
+				<canvas id="events-line" class="line"></canvas>
+			</span>
+		</h2>
 		<div class="l-shift-20">
 			<ul class="b-menu">
 				<li class="item">
@@ -10,7 +15,12 @@
 			</ul>
 		</div>
 		<div id="filter">
-			<h2 class="b-navigation-title">Главное</h2>
+			<h2 class="b-navigation-title">
+				<span class="inner">
+					Главное
+					<canvas id="articles-line" class="line"></canvas>
+				</span>
+			</h2>
 			<div class="l-shift-20">
 				<ul class="b-menu">
 					<li class="item">
@@ -126,7 +136,7 @@
 				dots: true
 			});
 		</script>
-		<div class="b-slideshow">
+		<div id="events" class="b-slideshow">
 			<div class="frame">
 				<ul class="b-events slides">
 					<li class="item nearest-1">
@@ -233,7 +243,7 @@
 			<i class="b-right-fader"></i>
 		</div>
 		<script type="text/javascript">
-			^$('.b-slideshow').slideShow({
+			^$('#events').slideShow({
 				slideSelector: '.b-events .item',
 				slideBy: 2,
 				slidePerPage: 5,
@@ -242,7 +252,7 @@
 			});
 		</script>
 		<div class="l-column-472 l-intercolumn-28">
-			<div class="b-featured-article">
+			<div id="featured-article" class="b-featured-article">
 				<a class="link c-gaidar-link" href="/publications/article.html">
 					<div class="b-section-label c-gaidar-block">Поздравляем</div>
 					<div class="image-container">
@@ -565,3 +575,15 @@
 			</li>
 		</ul>
 	</div>
+	<script type="text/javascript">
+		^$('#events-line').line({
+			targetSelector: '#events',
+			targetCorrectionX: 24,
+			targetCorrectionY: 86,
+			targetMarginX: 0
+		});
+		
+		^$('#articles-line').line({
+			targetSelector: '#featured-article'
+		});
+	</script>
