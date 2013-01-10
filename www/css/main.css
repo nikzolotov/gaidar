@@ -747,6 +747,7 @@ SUB {
 	}
 	.b-navigation-title .inner {
 		position: relative;
+		display: inline-block;
 		}
 		.b-navigation-title .line {
 			position: absolute;
