@@ -2023,6 +2023,9 @@ SUB {
 		font-size: 14px;
 		line-height: 20px;
 		}
+	.b-project-header .line {
+		position: absolute;
+		}
 
 /* =Color coding
 --------------------------------------- */

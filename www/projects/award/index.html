@@ -14,7 +14,20 @@
 				<a class="link" href="/projects/award/">Премия Егора Гайдара <sup class="year">2012</sup></a>
 			</h1>
 			<div class="event"><strong class="date">15 ноября —</strong> церемония награждения</div>
-			<p class="label">Статуэтка премии. <br/>Авторы: <br/>Андрей Балашов и&nbsp;Вячеслав Бухаев</p>
+			<p class="label">
+				Статуэтка премии. <br/>Авторы: <br/>Андрей Балашов и&nbsp;Вячеслав Бухаев
+				<canvas id="label-line" class="line"></canvas>
+			</p>
+			<script type="text/javascript">
+				^$('#label-line').line({
+					x1: 0,
+					y2: 0,
+					x2: 52,
+					y2: 42,
+					left: -30,
+					top: -44
+				});
+			</script>
 		</div>
 		<div class="l-column-472 l-intercolumn-28">
 			<div class="b-featured-article">
