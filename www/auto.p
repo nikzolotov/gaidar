@@ -129,8 +129,8 @@
 			</a>
 		</li>
 	</ul>
-	<div>
-		<img src="/img/tmp/social-links.png" alt=""/>
+	<div class="b-facebook">
+		<img src="/img/tmp/social-links.png" alt="" style="padding-top: 11px"/>
 	</div>
 
 @footer[]
