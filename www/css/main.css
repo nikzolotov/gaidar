@@ -876,6 +876,13 @@ SUB {
 	background: #FFFF0A;
 	}
 
+/* Small text for editors */
+small {
+	margin-bottom: 21px;
+	font-size: 12px;
+	line-height: 16px;
+	}
+
 /* Intro or some description */
 .b-intro,
 .b-sub-intro {
