@@ -1345,6 +1345,16 @@ SUB {
 		.b-article-highlighted .b-article-link:hover .title {
 			opacity: .75;
 			}
+	.b-article-highlighted .b-source .link {
+		color: #FFF !important;
+		}
+		.b-article-highlighted .b-source .b-graphics-7-square {
+			left: 0;
+			top: 3px;
+			width: 6px;
+			height: 6px;
+			border: 1px solid #FFF;
+			}
 		
 
 /* Quote */
