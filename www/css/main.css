@@ -1785,10 +1785,13 @@ small {
 
 /* Project promo */
 .b-project-promo {
+	position: relative;
+	display: block;
 	margin-bottom: 44px;
 	padding-left: 41px;
-	font-size: 14px;
-	line-height: 19px;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 18px;
 	}
 	.b-project-promo .title {
 		position: relative;
@@ -1798,31 +1801,39 @@ small {
 		line-height: 18px;
 		color: #FFF;
 		}
-		.b-project-promo .shadow {
-			display: inline-block;
-			background: rgba(0, 0, 0, .08)
+		.b-project-promo .line {
+			display: block;
 			}
-			.b-project-promo .line {
-				position: relative;
-				top: -4px;
-				left: -6px;
+			.b-project-promo .shadow {
 				display: inline-block;
-				padding: 4px;
-				background: #333;
+				background: rgba(0, 0, 0, .08)
 				}
+				.b-project-promo .text {
+					position: relative;
+					top: -4px;
+					left: -6px;
+					display: inline-block;
+					padding: 4px;
+					background: #333;
+					white-space: nowrap;
+					}
+				.b-project-promo:hover .text {
+					background: #555;
+					}
 	.b-project-promo .inner {
 		position: relative;
 		z-index: 1;
-		padding: 31px 20px 26px 25px;
+		padding: 32px 28px 26px 25px;
 		background: #F2F2F2;
 		}
 		.b-project-promo .image {
 			float: left;
-			margin: -17px 25px 0 -47px;
+			margin: -18px 25px 0 -47px;
 			}
 		.b-project-promo .desc {
 			margin: 0;
 			overflow: hidden;
+			color: #231F20;
 			}
 		.b-project-promo .corner-1 {
 			position: absolute;
@@ -1848,6 +1859,44 @@ small {
 			height: 13px;
 			background: #9B9B9B;
 			}
+.b-project-promo-clear {
+	padding-left: 19px;
+	}
+	.b-project-promo-clear .title {
+		float: left;
+		margin: 30px 24px 0 -13px;
+		}
+	.b-project-promo-clear .inner {
+		padding-bottom: 32px;
+		}
+.b-project-promo-cover {
+	padding-left: 19px;
+	}
+	.b-project-promo-cover .title {
+		margin-left: -13px;
+		}
+	.b-project-promo-cover .cover {
+		display: block;
+		}
+	.b-project-promo-cover .inner {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		max-width: 204px;
+		padding: 20px 24px 25px 27px;
+		}
+.b-project-promo-quote {
+	padding-left: 19px;
+	}
+	.b-project-promo-quote .title {
+		position: absolute;
+		top: 31px;
+		left: 41px;
+		}
+	.b-project-promo-quote .cover {
+		display: block;
+		}
+		
 
 /* =Containers
 --------------------------------------- */
@@ -2146,8 +2195,7 @@ small {
 .c-about-link .b-graphics B,
 .c-about-hidden-link .b-graphics B,
 .c-about-link.disabled:hover .b-graphics B,
-.c-about-block,
-.c-about-promo .line {
+.c-about-block {
 	background-color: #FD9500 !important;
 	}
 .c-about-link:hover .b-graphics B {
@@ -2156,6 +2204,12 @@ small {
 .c-about-link .b-graphics-prev B,
 .c-about-link .b-graphics-next B {
 	background-color: transparent !important;
+	}
+.c-about-promo .text {
+	background: #FF9F16;
+	}
+.c-about-promo:hover .text {
+	background: #FFC45B;
 	}
 .c-about-promo .corner-1 { background: #FFC45B; }
 .c-about-promo .corner-2 { background: #FFAE15; }
@@ -2179,8 +2233,7 @@ small {
 .c-gaidar-link .b-graphics B,
 .c-gaidar-hidden-link .b-graphics B,
 .c-gaidar-link.disabled:hover .b-graphics B,
-.c-gaidar-block,
-.c-gaidar-promo .line {
+.c-gaidar-block {
 	background-color: #E95429 !important;
 	}
 .c-gaidar-link:hover .b-graphics B {
@@ -2193,6 +2246,12 @@ small {
 .c-gaidar-link .b-graphics-next B {
 	left: -132px;
 	background-color: transparent !important;
+	}
+.c-gaidar-promo .text {
+	background: #EC5F29;
+	}
+.c-gaidar-promo:hover .text {
+	background: #F68B46;
 	}
 .c-gaidar-promo .corner-1 { background: #F68B46; }
 .c-gaidar-promo .corner-2 { background: #EE6000; }
@@ -2263,6 +2322,21 @@ small {
 	left: -308px;
 	background-color: transparent !important;
 	}
+.c-project-promo .text {
+	background: #695C9D;
+	}
+.c-project-promo:hover .text {
+	background: #8681cc;
+	}
+.b-project-promo-clear .inner {
+	background-image: url('../img/containers/corner-project.png');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	}
+.c-project-promo .corner-1 { background: #AC74B7; }
+.c-project-promo .corner-2 { background: #8A3B99; }
+.c-project-promo .corner-3 { background: #0053A1; }
+
 
 /* News */
 .c-news-link,
@@ -2296,3 +2370,14 @@ small {
 	left: -396px;
 	background-color: transparent !important;
 	}
+
+/* Summer */
+.c-summer-promo .text {
+	background: #43935F;
+	}
+.c-summer-promo:hover .text {
+	background: #73B791;
+	}
+.c-summer-promo .corner-1 { background: #73B791; }
+.c-summer-promo .corner-2 { background: #3B9964; }
+.c-summer-promo .corner-3 { background: #92A000; }
