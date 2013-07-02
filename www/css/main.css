@@ -249,8 +249,9 @@ SUB {
 .b-meta:after,
 .b-structure:after,
 .b-contacts:after,
-.b-tiles:after,
-.b-project-promo:after {
+.b-project-promo:after,
+.b-photos:after,
+.b-tiles:after {
 	content: ".";
 	display: block;
 	height: 0;
@@ -1537,6 +1538,17 @@ small {
 	.b-more .link {
 		text-decoration: none;
 		}
+.b-more-button {
+	margin-bottom: -11px;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	}
+	.b-more-button .link {
+		padding: 7px 10px;
+		background: #d5d5d5;
+		color: #231F20;
+		}
 
 /* Article meta with disqussion link */
 .b-meta {
@@ -1956,7 +1968,6 @@ small {
 
 /* Photos */
 .b-photos {
-	overflow: hidden;
 	margin: 0;
 	font-size: 14px;
 	line-height: 18px;
@@ -1976,6 +1987,37 @@ small {
 		.b-photos .image {
 			margin-bottom: 18px;
 			}
+
+/* Gallery tiles */
+.b-gallery {
+	margin: -24px -5px 23px -16px;
+	padding: 5px;
+	overflow: hidden;
+	}
+	.b-gallery .item {
+		float: left;
+		display: table;
+		margin: 19px 0 0 11px;
+		}
+	.b-gallery .item:before {
+		content: none;
+		display: none;
+		}
+		.b-gallery .link {
+			display: table-cell;
+			width: 156px;
+			height: 156px;
+			vertical-align: middle;
+			border: 1px solid #EAEAEA;
+			background: #FFF;
+			}
+		.b-gallery .link:hover {
+			border-color: #CCC;
+			}
+			.b-gallery .image {
+				display: block;
+				margin: 0 auto;
+				}
 
 /* =Containers
 --------------------------------------- */
@@ -2356,6 +2398,10 @@ small {
 .c-about-page .b-corner .different-brick {
 	background: #FF8112;
 	}
+.c-about-button:hover {
+	background: #FD9500;
+	color: #FFF;
+	}
 
 /* Gaidar */
 .c-gaidar-link,
@@ -2407,6 +2453,10 @@ small {
 .c-gaidar-page .b-corner .different-brick {
 	background: #FE9400;
 	}
+.c-gaidar-button:hover {
+	background: #E95429;
+	color: #FFF;
+	}
 
 /* Article */
 .c-article-link,
@@ -2448,6 +2498,10 @@ small {
 	}
 .c-article-page .b-corner .different-brick {
 	background: #0053A1;
+	}
+.c-article-button:hover {
+	background: #8D3192;
+	color: #FFF;
 	}
 
 /* Project */
@@ -2505,7 +2559,10 @@ small {
 .c-project-page .b-corner .different-brick {
 	background: #0053A1;
 	}
-
+.c-project-button:hover {
+	background: #5A54A3;
+	color: #FFF;
+	}
 
 /* News */
 .c-news-link,
@@ -2547,6 +2604,10 @@ small {
 	}
 .c-news-page .b-corner .different-brick {
 	background: #0053A1;
+	}
+.c-news-button:hover {
+	background: #005AA9;
+	color: #FFF;
 	}
 
 /* Summer */
